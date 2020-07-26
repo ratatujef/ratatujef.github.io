@@ -64,15 +64,14 @@ a:visited {
 .wrapper {
   position: relative;
   overflow: hidden;
-  padding-bottom: 20px;
+  height: 100vh;
 }
 .header {
-  height: 8vh;
+  height: 8%;
   background-color: #1e364e;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 2vw;
 }
 .header__name {
   padding-left: 1vw;
@@ -147,17 +146,16 @@ h1 {
   text-align: center;
 }
 .main {
-  height: 100vh;
+  height: 92%;
   background-color: #18b5bc;
-  padding: 8vh;
-  position: relative;
-  overflow: hidden;
+  padding-top: 8%;
+  padding-bottom: 20px;
 }
 .main__projects {
   position: absolute;
   width: 200px;
   right: 150px;
-  top: 50px;
+  top: 100px;
   -webkit-animation: scale 2s infinite;
   animation: scale 2s infinite;
 }
@@ -214,7 +212,7 @@ h1 {
     font-size: 1.5em;
   }
   .main {
-    padding: 4vh;
+    padding-top: 4vh;
   }
   .main__projects {
     width: 150px;
