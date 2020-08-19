@@ -33,27 +33,31 @@
         <div><img src="https://mc.yandex.ru/watch/65598307" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__name"><a href="mailto:ratatujef@gmail.com" class="header__link">ratatujef@gmail.com</a>
-            </div>
-            <nav class="project">
-                <ul>
-                    <li class="project__item"><a href="UBER/index.html" class="project__link">UBER</a></li>
-                    <li class="project__item"><a href="Yoga/index.html" class="project__link">Yoga</a></li>
-                    <li class="project__item"><a href="RunSmart/index.html" class="project__link">RunSmart</a></li>
-                    <li class="project__item"><a href="glopt/index.html" class="project__link">Glopt</a></li>
-                </ul>
-            </nav>
-            <div class="humburger header__humburger">
-                <div class="humburger__line"></div>
-                <div class="humburger__line"></div>
-                <div class="humburger__line"></div>
-            </div>
 
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__name"><a href="#" class="header__link">Contacts</a>
+                </div>
+                <nav>
+                    <ul class="project">
+                        <li class="project__item"><a href="UBER/index.html" class="project__link">UBER</a></li>
+                        <li class="project__item"><a href="Yoga/index.html" class="project__link">Yoga</a></li>
+                        <li class="project__item"><a href="RunSmart/index.html" class="project__link">RunSmart</a></li>
+                        <li class="project__item"><a href="glopt/index.html" class="project__link">Glopt</a></li>
+                    </ul>
+                </nav>
+                <div class="humburger header__humburger">
+                    <div class="humburger__line"></div>
+                    <div class="humburger__line"></div>
+                    <div class="humburger__line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        </header>
-        <main class="main">
+    <main class="main">
+        <div class="container">
             <div class="main__projects"><img src="img/icons/projects.svg" alt="arrow"></div>
             <div class="main__photo"></div>
             <div class="main__devider"></div>
@@ -69,13 +73,15 @@
                 <a href="https://teleg.run/ratatujef" class="social__item"><img src="img/icons/telegram.svg" alt="link"
                         class="social__link"></a>
             </div>
-        </main>
+        </div>
+    </main>
     </div>
     <section class="footer"></section>
     <div class="overlay">
         <div class="modal overlay__modal">
             <div class="modal__header">Напишите мне</div>
-            <form action="#" name="message" method="POST" class="modal__form">
+
+            <form action="mailer/smart.php" name="form" method="POST" class="modal__form">
                 <input type="text" name="name" required placeholder="Ваше имя" class="modal__input">
                 <input type="tel" name="tel" placeholder="Ваше телефон" class="modal__input">
                 <input type="text" name="email" required placeholder="Ваша почта" class="modal__input">
