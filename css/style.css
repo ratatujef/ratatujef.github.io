@@ -379,7 +379,7 @@ h1 {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 690px) {
   .main {
     padding-bottom: 0;
   }

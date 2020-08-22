@@ -1,0 +1,219 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active, a:focus, a:visited {
+  text-decoration: none;
+}
+
+body {
+  padding-top: 4vh;
+  background-color: #e955b0;
+}
+
+.num-area {
+  margin-top: 3rem;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #e955b0;
+  padding: 20px;
+  text-align: center;
+  color: #e955b0;
+  font-weight: bold;
+  background-color: #51e2ec;
+  font-size: 3em;
+  -webkit-box-shadow: 4px 4px 20px #e955b0;
+          box-shadow: 4px 4px 20px #e955b0;
+}
+
+.num-area_win {
+  background: #fafd4d;
+}
+
+.section {
+  height: 90vh;
+  background-color: #51e2ec;
+  padding-top: 6vh;
+  padding: 1rem;
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #706a6f;
+  -webkit-box-shadow: 4px 4px 20px #706a6f;
+          box-shadow: 4px 4px 20px #706a6f;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.manual {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message {
+  font-size: 2em;
+  font-weight: bold;
+  color: #706a6f;
+  text-align: center;
+}
+
+.message_win {
+  color: #119644;
+}
+
+.number {
+  display: none;
+  color: #119644;
+  font-size: 30px;
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn {
+  margin: 2rem 1rem;
+  padding: 1rem 2rem;
+  background-color: #e955b0;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  font-weight: bold;
+  border: 1.5px solid #e955b0;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-color: #fff;
+  color: #e955b0;
+  border: 1.5px solid #e955b0;
+}
+
+.input {
+  margin-top: 3rem;
+  width: 150px;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #706a6f;
+  text-align: center;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.input:focus {
+  -webkit-box-shadow: 4px 4px 20px #706a6f;
+          box-shadow: 4px 4px 20px #706a6f;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 550px) {
+  .message {
+    font-size: 1.5em;
+  }
+  .input {
+    font-size: 1.5em;
+    padding: .85em;
+  }
+  .btn {
+    margin: 1rem 0.5rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 450px) {
+  .num-area {
+    margin-top: 1rem;
+  }
+  .input {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 400px) {
+  .num-area {
+    margin-top: 1rem;
+  }
+  .input {
+    margin-top: 1.5rem;
+    font-size: 1.5em;
+  }
+  .message {
+    font-size: 1em;
+  }
+  .section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
