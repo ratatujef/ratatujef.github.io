@@ -15,7 +15,6 @@ window.addEventListener("DOMContentLoaded", function () {
       project.classList.add("project_active");
     }
   });
-<<<<<<< HEAD
   //отправка почты
 
   // let form = document.querySelector('form');
@@ -29,7 +28,6 @@ window.addEventListener("DOMContentLoaded", function () {
   //   xhr.onload=()=>alert(xhr.response);
   // })
   
-=======
   contact.addEventListener("click", (e) => {
     e.preventDefault();
     overlay.classList.toggle("overlay_active");
@@ -38,5 +36,4 @@ window.addEventListener("DOMContentLoaded", function () {
   overlay.addEventListener("click", (e) => {
     if (e.target == overlay) overlay.classList.toggle("overlay_active");
   });
->>>>>>> 2ad0510f84af19750d12d405c132f37127764cd0
 });
