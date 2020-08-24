@@ -13,4 +13,17 @@ window.addEventListener("DOMContentLoaded", function () {
       project.classList.add("project_active");
     }
   });
+  //отправка почты
+
+  // let form = document.querySelector('form');
+
+  // form.addEventListener('submit', function(e){
+  //   e.preventDefault();
+  //   let formData = new FormData([form]);
+  //   let xhr = new XMLHttpRequest();
+  //   xhr.open('POST', "mailer/smart.php");
+  //   xhr.send(formData);
+  //   xhr.onload=()=>alert(xhr.response);
+  // })
+  
 });
