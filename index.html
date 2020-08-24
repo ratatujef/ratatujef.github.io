@@ -33,27 +33,34 @@
         <div><img src="https://mc.yandex.ru/watch/65598307" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__name"><a href="mailto:ratatujef@gmail.com" class="header__link">ratatujef@gmail.com</a>
-            </div>
-            <nav class="project">
-                <ul>
-                    <li class="project__item"><a href="UBER/index.html" class="project__link">UBER</a></li>
-                    <li class="project__item"><a href="Yoga/index.html" class="project__link">Yoga</a></li>
-                    <li class="project__item"><a href="RunSmart/index.html" class="project__link">RunSmart</a></li>
-                    <li class="project__item"><a href="glopt/index.html" class="project__link">Glopt</a></li>
-                </ul>
-            </nav>
-            <div class="humburger header__humburger">
-                <div class="humburger__line"></div>
-                <div class="humburger__line"></div>
-                <div class="humburger__line"></div>
-            </div>
 
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__name"><a href="#" class="header__link">Contacts</a>
+                </div>
+                <nav>
+                    <ul class="project">
+                        <li class="project__item"><a href="UBER/index.html" class="project__link">UBER</a></li>
+                        <li class="project__item"><a href="find_t_n/index.html" class="project__link">Find the
+                                Number</a></li>
 
-        </header>
-        <main class="main">
+                        <li class="project__item"><a href="RunSmart/index.html" class="project__link">RunSmart</a></li>
+                        <li class="project__item"><a href="glopt/index.html" class="project__link">Glopt</a></li>
+                        <li class="project__item"><a href="Yoga/index.html" class="project__link">Yoga</a></li>
+                    </ul>
+                </nav>
+                <div class="humburger header__humburger">
+                    <div class="humburger__line"></div>
+                    <div class="humburger__line"></div>
+                    <div class="humburger__line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
             <div class="main__projects"><img src="img/icons/projects.svg" alt="arrow"></div>
             <div class="main__photo"></div>
             <div class="main__devider"></div>
@@ -69,12 +76,30 @@
                 <a href="https://teleg.run/ratatujef" class="social__item"><img src="img/icons/telegram.svg" alt="link"
                         class="social__link"></a>
             </div>
-        </main>
+        </div>
+    </main>
     </div>
     <section class="footer"></section>
+    <div class="overlay">
+        <div class="modal overlay__modal">
+            <div class="modal__header">Напишите мне</div>
+
+            <form action="mailer/smart.php" name="form" method="POST" class="modal__form">
+                <input type="text" name="name" required placeholder="Ваше имя" class="modal__input">
+                <input type="tel" name="tel" placeholder="Ваше телефон" class="modal__input">
+                <input type="text" name="email" required placeholder="Ваша почта" class="modal__input">
+                <textarea type="text" cols="50" rows="50" name="message" placeholder="Ваше сообщение" required
+                    maxlength="250" class="modal__input modal__textarea"></textarea>
+                <!-- <div class="g-recaptcha" data-sitekey="6LfCtrcZAAAAABMQAoNvErShVpDkuGUuLuw4a7T-"></div>
+                <div class="text-danger" id="recaptchaError"></div> -->
+                <input type="submit" value="Отправить" class="btn">
+            </form>
+
+        </div>
+    </div>
 
 
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="js/script.js"></script>
 </body>
 

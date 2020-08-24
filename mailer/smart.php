@@ -1,7 +1,7 @@
 <?php 
 
 $name = $_POST['name'];
-$phone = $_POST['phone'];
+$phone = $_POST['tel'];
 $email = $_POST['email'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
@@ -13,13 +13,13 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.yandex.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'ratatujef1@yandex.ru';                 // Наш логин
-$mail->Password = 'Ratatujef012955';                           // Наш пароль от ящика
+$mail->Username = '__';                 // Наш логин
+$mail->Password = '__';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
 $mail->setFrom('', 'Ivan Glebov');   // От кого письмо 
-$mail->addAddress('ratatujef@gmail.com');     // Add a recipient
+$mail->addAddress('__');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
