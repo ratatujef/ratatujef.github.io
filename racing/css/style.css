@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    padding-top: 4rem;
+}
+
+.start,
+.score {
+    position: fixed;
+    width: 300px;
+    height: 50px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    background-color: rgb(33, 112, 40);
+    border: 2px solid grey;
+    box-shadow: 5px 5px 20px grey;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    text-align: center;
+    z-index: 200;
+}
+
+.start:hover {
+    background-color: #fff;
+    border-color: rgb(33, 112, 40);
+    color: grey;
+    transition: all 0.5s;
+}
+
+.score {
+    background-color: #fff;
+    border-color: rgb(33, 112, 40);
+    color: grey;
+    font-weight: 700;
+    font-size: 18px;
+    z-index: 200;
+    transition: all 0.5s;
+}
+
+.controls-speed {
+    width: 300px;
+    margin: 5px auto;
+    display: flex;
+}
+
+label {
+    color: grey;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+
+input {
+    width: 190px;
+    margin: 0 auto;
+    height: 20px;
+    border: none;
+    color: grey;
+    font-weight: 700;
+    font-size: 21px;
+    text-align: center;
+}
+
+.speed-up,
+.speed-down {
+    padding-top: 5px;
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid grey;
+    box-shadow: 5px 5px 20px grey; */
+    cursor: pointer;
+}
+
+.controls {
+    display: none;
+}
+
+.arrow {
+    padding-top: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+svg {
+    width: 40px;
+    margin-left: 3px;
+}
+
+.game {
+    height: 90vh;
+}
+
+.hide {
+    display: none;
+}
+
+.car,
+.enemy {
+    width: 50px;
+    height: 100px;
+    background: url(../image/player.png) center / cover no-repeat;
+    position: absolute;
+}
+
+.gameArea {
+    width: 300px;
+    height: 90%;
+    position: relative;
+    margin: 0 auto;
+    background-color: rgb(104, 100, 100);
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    left: 145px;
+    background-color: #fff;
+}
+
+@media (max-width: 1025px) {
+    .controls {
+        display: flex;
+        position: fixed;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-wrap: wrap;
+        width: 200px;
+        height: 200px;
+        transform: rotateZ(45deg) translateX(-70%);
+    }
+    .arrow>svg {
+        width: 65px;
+        margin-left: 15px;
+    }
+    .arrow {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        padding-left: 30px;
+        padding-top: 17px;
+        opacity: .4;
+    }
+    .left {
+        transform: rotateZ(135deg);
+    }
+    .right {
+        transform: rotateZ(-45deg);
+    }
+    .up {
+        transform: rotateZ(-135deg);
+    }
+    .down {
+        transform: rotateZ(45deg);
+    }
+}
