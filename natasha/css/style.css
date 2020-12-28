@@ -1,0 +1,45 @@
+body {
+  background-color: #f8239f;
+  color: white;
+  font-family: Roboto, sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+main {
+  position: relative;
+  height: 70vh;
+  vertical-align: middle;
+}
+
+.button {
+  margin: 10% auto;
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 15px solid white;
+  border-radius: 100%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  background-color: #f8239f;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 82px;
+  color: white;
+}
+
+.button:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
